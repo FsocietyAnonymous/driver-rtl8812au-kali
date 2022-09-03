@@ -1,0 +1,19 @@
+# descrizione 
+Ciao oggi ti mostrerò come installare,
+I driver per dispositivi usb wifi Realtek.
+#compatibile con chipset Realtek RTL8811AU,
+e RTL8812AU 
+#per qualsiasi Distro linux.
+#supporta solo sistemi basati a 64 bit.
+
+
+
+#installazione
+Digita
+$ apt update
+$ apt install git dkms
+$ git clone https://github.com/gnab/rtl8812au.git
+$ cp -r rtl8812au /usr/src/rtl8812au-4.2.2
+$ dkms add -m rtl8812au -v 4.2.2
+$ dkms build -m rtl8812au -v 4.2.2
+$ dkms install -m rtl8812au -v 4.2.2
