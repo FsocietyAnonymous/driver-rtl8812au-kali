@@ -1,6 +1,6 @@
 # driver-rtl8812au
 
-# installazione
+# installation
 
 # apt update
 
